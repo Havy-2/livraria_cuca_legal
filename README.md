@@ -1,76 +1,51 @@
-# Exercício 4 — Coop Livraria Cuca Legal
+# Coop Livraria Cuca Legal
 
-Protótipo de site institucional da **Coop Livraria Cuca Legal**, livraria cooperativa fictícia com sede em Vila Velha / Espírito Santo.
+**O site não é este README.**  
+Abra a página inicial:
 
-O projeto foi construído com HTML e CSS (e um script simples de interação), a partir da identidade visual do cartaz da livraria: mascote do trevo, cores creme, verde e terracota.
+- [Abrir o site (index.html)](index.html)
+- [Versão no GitHub Pages](https://havy-2.github.io/livraria_cuca_legal/index.html)
 
-## Como abrir
+Se `https://havy-2.github.io/livraria_cuca_legal/` ainda mostrar este texto, use o link com `/index.html` no final e envie de novo o arquivo `.nojekyll` que está na raiz do repositório.
 
-1. Entre na pasta `Livaria`.
-2. Abra o arquivo `index.html` no navegador.
+---
 
-```text
-Exercicio4/Livaria/index.html
-```
-
-Não é necessário servidor. Basta um navegador moderno.
+Protótipo da **Coop Livraria Cuca Legal**, livraria cooperativa fictícia em Vila Velha / ES.
 
 ## Páginas
 
 | Arquivo | Conteúdo |
 | --- | --- |
-| `Livaria/index.html` | Página inicial, vitrine de livros e comentários |
-| `Livaria/sobre.html` | História da cooperativa e diferenciais |
-| `Livaria/contato.html` | Formulário de contato e dados da loja física |
-| `Livaria/css/estilo.css` | Estilos do site |
-| `Livaria/js/script.js` | Carrinho simulado e envio do formulário (protótipo) |
+| [index.html](index.html) | Home, carrossel de livros e comentários |
+| [sobre.html](sobre.html) | História e diferenciais |
+| [contato.html](contato.html) | Formulário e loja física |
+| `css/estilo.css` | Estilos |
+| `js/script.js` | Carrinho, formulário e carrossel |
 
-## Destaques da vitrine
+## Como publicar no GitHub Pages
 
-- **As Aventuras de Zeca** — Mia Caminhos, ilustrado por Leo Magalhães
-- **Orgulho e Preconceito** — Jane Austen
-- **Tudo ao Mesmo Tempo** — Clara Amaral
+1. Settings → Pages  
+2. Source: **Deploy from a branch**  
+3. Branch: `main` / pasta `/ (root)`  
+4. Salve e espere 1 ou 2 minutos  
 
-## Contato e atalhos
+O GitHub Pages deve abrir o `index.html`, não o README. O arquivo `.nojekyll` evita que o Jekyll transforme o README na home.
 
-No rodapé e na página de contato há botões que abrem:
+## Vitrine
 
-- **Mapa** — Av. Luciano das Neves, Centro de Vila Velha, ES
-- **Facebook** — [facebook.com/LivrariaCucaLegal](https://facebook.com/LivrariaCucaLegal)
-- **Instagram** — [instagram.com/livrariacucalegal](https://instagram.com/livrariacucalegal)
-- **E-mail** — [contato@livrariacucalegal.com.br](mailto:contato@livrariacucalegal.com.br)
+- As Aventuras de Zeca — Mia Caminhos  
+- Orgulho e Preconceito — Jane Austen  
+- Tudo ao Mesmo Tempo — Clara Amaral  
+- O Pequeno Príncipe — Antoine de Saint-Exupéry  
+- Capitães da Areia — Jorge Amado  
+- A Bolsa Amarela — Lygia Bojunga  
 
-Telefone: `(27) 98765-4321`
+## Contato do protótipo
 
-## Estrutura da pasta
+- WhatsApp e telefone: (27) 98765-4321  
+- E-mail: contato@livrariacucalegal.com.br  
+- Endereço: Av. Luciano das Neves, Vila Velha / ES  
+- Instagram: [@livrariacucalegal](https://instagram.com/livrariacucalegal)  
+- Facebook: [/LivrariaCucaLegal](https://facebook.com/LivrariaCucaLegal)
 
-```text
-Exercicio4/
-├── README.md
-├── DfO8R.jpg                 # cartaz de referência
-├── Screenshot_3.jpg          # captura do layout
-└── Livaria/
-    ├── index.html
-    ├── sobre.html
-    ├── contato.html
-    ├── css/
-    │   └── estilo.css
-    ├── js/
-    │   └── script.js
-    └── sobre/img/
-        ├── mascote.jpg
-        ├── nome-livraria.jpg
-        ├── capa-zeca.jpg
-        ├── capa-orgulho.jpg
-        └── capa-tudo.jpg
-```
-
-## Tecnologias
-
-- HTML5
-- CSS3 (layout responsivo, variáveis de cor)
-- JavaScript básico no navegador
-
-## Observação
-
-Este é um protótipo acadêmico. O formulário de contato não envia mensagem para um servidor; apenas confirma o envio na própria página. O botão **Adicionar** da vitrine simula um carrinho.
+Protótipo acadêmico: o formulário não envia para servidor e o carrinho só simula a compra.
