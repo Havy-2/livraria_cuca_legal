@@ -1,51 +1,60 @@
 # Coop Livraria Cuca Legal
 
-**O site não é este README.**  
-Abra a página inicial:
-
-- [Abrir o site (index.html)](index.html)
-- [Versão no GitHub Pages](https://havy-2.github.io/livraria_cuca_legal/index.html)
-
-Se `https://havy-2.github.io/livraria_cuca_legal/` ainda mostrar este texto, use o link com `/index.html` no final e envie de novo o arquivo `.nojekyll` que está na raiz do repositório.
-
----
-
-Protótipo da **Coop Livraria Cuca Legal**, livraria cooperativa fictícia em Vila Velha / ES.
+Protótipo acadêmico da **Coop Livraria Cuca Legal**, livraria cooperativa fictícia em São Paulo.
 
 ## Páginas
 
 | Arquivo | Conteúdo |
-| --- | --- |
-| [index.html](index.html) | Home, carrossel de livros e comentários |
-| [sobre.html](sobre.html) | História e diferenciais |
-| [contato.html](contato.html) | Formulário e loja física |
-| `css/estilo.css` | Estilos |
-| `js/script.js` | Carrinho, formulário e carrossel |
+|---------|----------|
+| `index.html` | Página inicial com destaques da prateleira e comentários |
+| `sobre.html` | História e diferenciais da cooperativa |
+| `contato.html` | Formulário de contato (integrado com Google Forms) |
+| `obrigado.html` | Página de confirmação após envio do formulário |
+| `Sebre.html` | Redirecionamento para `sobre.html` (correção de typo) |
 
-## Como publicar no GitHub Pages
+## Estrutura
 
-1. Settings → Pages  
-2. Source: **Deploy from a branch**  
-3. Branch: `main` / pasta `/ (root)`  
-4. Salve e espere 1 ou 2 minutos  
-
-O GitHub Pages deve abrir o `index.html`, não o README. O arquivo `.nojekyll` evita que o Jekyll transforme o README na home.
+```
+Livaria/
+├── css/
+│   └── estilo.css
+├── img/
+│   ├── capa-orgulho.jpg
+│   ├── capa-tudo.jpg
+│   ├── capa-zeca.jpg
+│   ├── cartaz.jpg
+│   ├── logo-rodape.jpg
+│   ├── mascote.jpg
+│   └── nome-livraria.jpg
+├── js/
+│   └── script.js
+├── index.html
+├── sobre.html
+├── contato.html
+├── obrigado.html
+├── Sebre.html
+└── README.md
+```
 
 ## Vitrine
 
-- As Aventuras de Zeca — Mia Caminhos  
-- Orgulho e Preconceito — Jane Austen  
-- Tudo ao Mesmo Tempo — Clara Amaral  
-- O Pequeno Príncipe — Antoine de Saint-Exupéry  
-- Capitães da Areia — Jorge Amado  
-- A Bolsa Amarela — Lygia Bojunga  
+- **As Aventuras de Zeca** — Mia Caminhos · ilust. Leo Magalhães — R$ 39,90
+- **Orgulho e Preconceito** — Jane Austen — R$ 49,90
+- **Tudo ao Mesmo Tempo** — Clara Amaral — R$ 44,90
 
-## Contato do protótipo
+## Contato
 
-- WhatsApp e telefone: (27) 98765-4321  
-- E-mail: contato@livrariacucalegal.com.br  
-- Endereço: Av. Luciano das Neves, Vila Velha / ES  
-- Instagram: [@livrariacucalegal](https://instagram.com/livrariacucalegal)  
+- Telefone: (11) 98765-4321
+- E-mail: contato@livrariacucalegal.com.br
+- Endereço: Rua das Flores, 123 — Centro, São Paulo/SP
+- Instagram: [@livrariacucalegal](https://instagram.com/livrariacucalegal)
 - Facebook: [/LivrariaCucaLegal](https://facebook.com/LivrariaCucaLegal)
 
-Protótipo acadêmico: o formulário não envia para servidor e o carrinho só simula a compra.
+## Formulário
+
+O formulário em `contato.html` está configurado para envio via Google Forms. Substitua `SEU_ID` e os códigos `entry.XXXXX_*` pelos valores reais do seu formulário antes de usar.
+
+## Observações
+
+- O carrinho de compras é apenas simulado (contador local no JavaScript).
+- Protótipo acadêmico — sem backend próprio.
