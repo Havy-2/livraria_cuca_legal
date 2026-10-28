@@ -3,125 +3,307 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coop Livraria Cuca Legal</title>
-  <link rel="icon" href="sobre/img/logo-rodape.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="css/estilo.css">
+  <title>Portfólio | Guilherme Paiva Costa Pereira</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="topo">
-    <div class="container topo-interno">
-      <a class="marca" href="index.html">
-        <img src="sobre/img/mascote.jpg" alt="Mascote trevo da Cuca Legal">
-        <span>
-          <small>Coop Livraria</small>
-          <strong>CUCA LEGAL</strong>
-        </span>
-      </a>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Portfólio <span>Guilherme</span></a>
       <nav>
-        <a class="ativo" href="index.html">Início</a>
-        <a href="#vitrine">Livros</a>
-        <a href="#comentarios">Comentários</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-box">
-        <img src="sobre/img/mascote.jpg" alt="Trevo sorridente com um livro">
-        <div>
-          <span class="selo">Coop</span>
-          <h1><span>Livraria</span>CUCA LEGAL</h1>
-          <p>Uma cooperativa de leitura em São Paulo. Clássicos, lançamentos e histórias para deixar a cuca legal.</p>
-          <div class="acoes">
-            <a class="btn" href="#vitrine">Ver destaques</a>
-            <a class="btn alt" href="contato.html">Falar com a loja</a>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="tag">Estudante de Técnico em Informática</p>
+        <h1>Olá, eu sou <span>Guilherme Paiva Costa Pereira</span></h1>
+        <p class="subtitle">
+          Portfólio acadêmico com projetos de Desenvolvimento Web, LPOO (C#), Estrutura de Dados e Banco de Dados.<br>
+          Desenvolvidos durante o curso no CEET Vasco Coutinho.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Estudante do curso <strong>Técnico em Informática</strong> no CEET Vasco Coutinho (Cariacica – ES). 
+            Este portfólio reúne exercícios e protótipos desenvolvidos nas disciplinas de Desenvolvimento Web, 
+            Linguagem de Programação Orientada a Objetos (LPOO), Estrutura de Dados e Banco de Dados.
+          </p>
+          <p>
+            Os projetos demonstram o uso de HTML5, CSS3, JavaScript, C#, estruturas de dados (listas, matrizes, filas) 
+            e scripts SQL, com foco em organização de código, boas práticas e aprendizado contínuo.
+          </p>
+          <p>
+            Experiência anterior como Jovem Aprendiz na Vale S.A. e formação em Elétrica Industrial pelo SENAI.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>Vários</strong>
+            <span>Projetos</span>
+          </div>
+          <div class="stat">
+            <strong>Web + C# + SQL</strong>
+            <span>Tecnologias</span>
+          </div>
+          <div class="stat">
+            <strong>Acadêmico</strong>
+            <span>Contexto</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="vitrine">
-      <div class="container">
-        <h2>Destaques da prateleira</h2>
-        <p class="folhas">✦ ✦ ✦</p>
-        <div class="grade">
-          <article class="card">
-            <img src="sobre/img/capa-zeca.jpg" alt="Capa de As Aventuras de Zeca">
-            <h3>As Aventuras de Zeca</h3>
-            <p class="autor">Mia Caminhos · ilust. Leo Magalhães</p>
-            <p class="estrelas">★★★★★</p>
-            <p class="preco">R$ 39,90</p>
-            <button class="btn adicionar">Adicionar</button>
-          </article>
-          <article class="card">
-            <img src="sobre/img/capa-orgulho.jpg" alt="Capa de Orgulho e Preconceito">
-            <h3>Orgulho e Preconceito</h3>
-            <p class="autor">Jane Austen</p>
-            <p class="estrelas">★★★★★</p>
-            <p class="preco">R$ 49,90</p>
-            <button class="btn adicionar">Adicionar</button>
-          </article>
-          <article class="card">
-            <img src="sobre/img/capa-tudo.jpg" alt="Capa de Tudo ao Mesmo Tempo">
-            <h3>Tudo ao Mesmo Tempo</h3>
-            <p class="autor">Clara Amaral</p>
-            <p class="estrelas">★★★★★</p>
-            <p class="preco">R$ 44,90</p>
-            <button class="btn adicionar">Adicionar</button>
-          </article>
-        </div>
-        <p id="carrinho" class="aviso" style="display:block;margin-top:18px;text-align:center">Carrinho: 0 livro(s)</p>
-      </div>
-    </section>
+  <section id="projetos" class="section section-alt">
+    <div class="container">
+      <h2>Projetos</h2>
+      <p class="section-intro">Exercícios e sistemas desenvolvidos nas diferentes disciplinas do curso.</p>
 
-    <section id="comentarios">
-      <div class="container">
-        <h2>Comentários</h2>
-        <p class="folhas">✦ ✦ ✦</p>
-        <div class="comentarios">
-          <blockquote class="depoimento">
-            <p>“</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="quem">Leitora da Cuca Legal</p>
-          </blockquote>
-          <blockquote class="depoimento">
-            <p>“</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            <p class="quem">Sócio da cooperativa</p>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-  </main>
+      <div class="projects-grid">
+        <!-- Web Projects -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Web — Exercício 1</span>
+            <h3>Mirror Fashion</h3>
+          </div>
+          <p>
+            Site de e-commerce de moda feminina (exercício clássico da Caelum). 
+            Inclui página sobre, produtos e estrutura com Bootstrap.
+          </p>
+          <ul class="tech-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+          </ul>
+          <div class="project-links">
+            <a href="mirrorfashion/sobre.html" class="btn btn-sm" target="_blank">Ver projeto</a>
+          </div>
+        </article>
 
-  <footer>
-    <div class="container rodape-contato">
-      <div>
-        <div class="icone">☎</div>
-        <p>(11) 98765-4321</p>
-      </div>
-      <div>
-        <div class="icone">✉</div>
-        <p>contato@livrariacucalegal.com.br</p>
-      </div>
-      <div>
-        <div class="icone">📍</div>
-        <p>Rua das Flores, 123<br>Centro — São Paulo/SP</p>
-      </div>
-      <div>
-        <div class="icone">📷</div>
-        <p><a href="https://instagram.com/livrariacucalegal" target="_blank" rel="noopener">@livrariacucalegal</a></p>
-      </div>
-      <div>
-        <div class="icone azul">f</div>
-        <p><a href="https://facebook.com/LivrariaCucaLegal" target="_blank" rel="noopener">/LivrariaCucaLegal</a></p>
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Web — Exercício 3</span>
+            <h3>Focinho Feliz</h3>
+          </div>
+          <p>
+            Site de pet shop fictício. Página "Sobre" com história da empresa, diferenciais,
+            imagens e estrutura semântica.
+          </p>
+          <ul class="tech-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Semântica</li>
+          </ul>
+          <div class="project-links">
+            <a href="focinhofeliz/sobre.html" class="btn btn-sm" target="_blank">Ver projeto</a>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-header">
+            <span class="project-tag">Web — Exercício 4</span>
+            <h3>Coop Livraria Cuca Legal</h3>
+          </div>
+          <p>
+            Protótipo completo de livraria cooperativa. Página inicial com vitrine de livros,
+            carrinho simulado, página Sobre, formulário de contato e página de agradecimento.
+          </p>
+          <ul class="tech-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="livraria-cuca-legal/index.html" class="btn btn-sm btn-primary" target="_blank">Ver projeto</a>
+            <a href="livraria-cuca-legal/contato.html" class="btn btn-sm" target="_blank">Formulário</a>
+          </div>
+        </article>
+
+        <!-- LPOO / C# -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">LPOO — C#</span>
+            <h3>Sistema Bancário / Conta</h3>
+          </div>
+          <p>
+            Projetos de sistema bancário com classes Conta, interfaces gráficas (Windows Forms),
+            depósito, saque e cadastro. Inclui versões com GUI e explicações de código.
+          </p>
+          <ul class="tech-list">
+            <li>C#</li>
+            <li>Windows Forms</li>
+            <li>POO</li>
+          </ul>
+          <div class="project-links">
+            <span class="btn btn-sm" style="opacity:0.6; cursor:default;">Pastas locais (não publicadas)</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">LPOO — C#</span>
+            <h3>Candidato a Estágio / Loja</h3>
+          </div>
+          <p>
+            Sistemas de cadastro de candidatos a estágio e loja (loja_ceet), com persistência em banco 
+            e interfaces. Diversas versões desenvolvidas.
+          </p>
+          <ul class="tech-list">
+            <li>C#</li>
+            <li>POO</li>
+            <li>BD</li>
+          </ul>
+          <div class="project-links">
+            <span class="btn btn-sm" style="opacity:0.6; cursor:default;">Pastas locais (não publicadas)</span>
+          </div>
+        </article>
+
+        <!-- Estrutura de Dados -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Estrutura de Dados</span>
+            <h3>Listas, Matrizes e Jogos</h3>
+          </div>
+          <p>
+            Atividades com vetores, listas (filmes, alunos, produtos), matrizes, jogo da memória 
+            e sistemas de cadastro/pesquisa de alunos. Inclui apresentações e exemplos práticos.
+          </p>
+          <ul class="tech-list">
+            <li>C# / Listas</li>
+            <li>Matrizes</li>
+            <li>Algoritmos</li>
+          </ul>
+          <div class="project-links">
+            <span class="btn btn-sm" style="opacity:0.6; cursor:default;">Pastas locais (não publicadas)</span>
+          </div>
+        </article>
+
+        <!-- Banco de Dados -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Banco de Dados</span>
+            <h3>Scripts SQL</h3>
+          </div>
+          <p>
+            Scripts SQL para criação de bancos (delivery de lanchonete, atividades avaliativas, INFESPDB etc.).
+            Modelagem e consultas desenvolvidas na disciplina.
+          </p>
+          <ul class="tech-list">
+            <li>SQL</li>
+            <li>Modelagem</li>
+            <li>Scripts</li>
+          </ul>
+          <div class="project-links">
+            <a href="materiais/banco-de-dados/" class="btn btn-sm" target="_blank">Ver scripts</a>
+          </div>
+        </article>
+
+        <!-- ApexCode / Stragalar -->
+        <article class="project-card featured">
+          <div class="project-header">
+            <span class="project-tag">Projeto Final — ApexCode</span>
+            <h3>Sistema Stragalar (Bar)</h3>
+          </div>
+          <p>
+            Sistema de gestão para bar/restaurante. Inclui modelagem de banco de dados, scripts SQL 
+            (múltiplas versões), aplicação em C# (Windows Forms) e documentação do projeto.
+          </p>
+          <ul class="tech-list">
+            <li>C#</li>
+            <li>SQL</li>
+            <li>Windows Forms</li>
+            <li>Modelagem BD</li>
+          </ul>
+          <div class="project-links">
+            <a href="materiais/apexcode/" class="btn btn-sm btn-primary" target="_blank">Ver scripts SQL</a>
+          </div>
+        </article>
       </div>
     </div>
-    <p class="copy">© 2026 Coop Livraria Cuca Legal</p>
+  </section>
+
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>HTML5 + CSS3 + JS</h4>
+          <p>Marcação semântica, layouts responsivos, Flexbox, formulários, interatividade básica e Bootstrap.</p>
+        </div>
+        <div class="skill">
+          <h4>C# e POO</h4>
+          <p>Classes, objetos, métodos, Windows Forms, sistemas de cadastro e controle (bancário, loja, candidatos).</p>
+        </div>
+        <div class="skill">
+          <h4>Estruturas de Dados</h4>
+          <p>Vetores, listas, matrizes, filas e algoritmos básicos aplicados em atividades práticas.</p>
+        </div>
+        <div class="skill">
+          <h4>SQL e Banco de Dados</h4>
+          <p>Criação de scripts, modelagem de dados e atividades avaliativas com bancos relacionais.</p>
+        </div>
+        <div class="skill">
+          <h4>Outras</h4>
+          <p>Pacote Office, organização, trabalho em equipe, Elétrica Industrial e facilidade de aprendizado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <h2>Contato</h2>
+      <div class="contact-box">
+        <p>Portfólio acadêmico — Técnico em Informática</p>
+        <ul class="contact-list">
+          <li><strong>Nome:</strong> Guilherme Paiva Costa Pereira</li>
+          <li><strong>E-mail:</strong> Guilhermepaiva524@gmail.com</li>
+          <li><strong>Telefone:</strong> (27) 99666-6160</li>
+          <li><strong>Local:</strong> Cariacica – ES</li>
+          <li><strong>Curso:</strong> Técnico em Informática</li>
+          <li><strong>Instituição:</strong> CEET Vasco Coutinho</li>
+        </ul>
+        <p class="note">
+          Currículo profissional disponível para download: 
+          <a href="curriculo-profissional.docx" target="_blank">DOCX</a> | 
+          <a href="curriculo-guilherme-paiva.pdf" target="_blank">PDF (certificado)</a>
+        </p>
+        <p class="note">
+          Para publicar no GitHub Pages, suba o conteúdo da pasta <code>portfolio</code> para um repositório
+          e ative o GitHub Pages na branch principal.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Portfólio acadêmico — Guilherme Paiva Costa Pereira</p>
+      <p class="footer-note">Projetos desenvolvidos como exercícios do curso Técnico em Informática. Protótipos acadêmicos.</p>
+    </div>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
