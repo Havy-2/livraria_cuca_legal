@@ -1,29 +1,23 @@
-// Portfólio — scripts simples
+document.addEventListener("DOMContentLoaded", () => {
+  const carrinhoEl = document.getElementById("carrinho");
+  const formContato = document.getElementById("form-contato");
+  const aviso = document.getElementById("ok");
+  let qtd = 0;
 
-// Destaque suave no menu ao rolar
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll("nav a");
-
-function updateActiveNav() {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 80;
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
+  document.querySelectorAll(".adicionar").forEach((botao) => {
+    botao.addEventListener("click", () => {
+      qtd += 1;
+      if (carrinhoEl) carrinhoEl.textContent = "Carrinho: " + qtd + " livro(s)";
+      botao.textContent = "Adicionado";
+      setTimeout(() => { botao.textContent = "Adicionar"; }, 800);
+    });
   });
 
-  navLinks.forEach((link) => {
-    link.style.color = "";
-    if (link.getAttribute("href") === `#${current}`) {
-      link.style.color = "#2563eb";
-      link.style.fontWeight = "700";
-    }
-  });
-}
-
-window.addEventListener("scroll", updateActiveNav);
-updateActiveNav();
-
-// Ano atual no rodapé (opcional)
-console.log("Portfólio carregado — Curso de Desenvolvimento Web");
+  if (formContato) {
+    formContato.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (aviso) aviso.style.display = "block";
+      formContato.reset();
+    });
+  }
+});
